@@ -1,0 +1,9 @@
+opencv-python
+numpy
+scipy
+matplotlib
+pillow
+piexif
+tifffile
+requests
+datasets

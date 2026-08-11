@@ -1,0 +1,55 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data/exdark/
+data/hyperspectral/
+
+# Generated outputs
+outputs/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+# ExDark dataset and macOS archive metadata
+data/
+__MACOSX/
+._*
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Generated outputs
+outputs/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.envgit status --ignored
