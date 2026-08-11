@@ -14,9 +14,6 @@ __pycache__/
 data/exdark/
 data/hyperspectral/
 
-# Generated outputs
-outputs/
-
 # VS Code
 .vscode/
 
@@ -45,8 +42,7 @@ env/
 __pycache__/
 *.py[cod]
 
-# Generated outputs
-outputs/
+
 
 # VS Code
 .vscode/
