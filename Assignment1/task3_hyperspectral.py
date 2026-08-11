@@ -12,7 +12,8 @@ DATA_URL = "https://huggingface.co/datasets/danaroth/indian_pines/resolve/main/I
 GT_URL = "https://huggingface.co/datasets/danaroth/indian_pines/resolve/main/Indian_pines_gt.mat"
 
 DATA_DIR = Path("data/hyperspectral")
-OUT_DIR = Path("outputs/task3")
+BASE_DIR = Path(__file__).resolve().parent
+OUT_DIR = BASE_DIR / "outputs" / "task3"
 
 
 def download(url: str, dest: Path):

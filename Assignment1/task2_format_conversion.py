@@ -4,8 +4,9 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-
-def convert_and_report(image_path: str, out_dir: str = "outputs/task2"):
+BASE_DIR = Path(__file__).resolve().parent
+DEFAULT_OUT_DIR = BASE_DIR / "outputs" / "task2"
+def convert_and_report(image_path: str, out_dir: str = str(DEFAULT_OUT_DIR)):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -61,6 +62,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--image", type=str, required=True,
                          help="Path to one representative ExDark image")
-    parser.add_argument("--out_dir", type=str, default="outputs/task2")
+    parser.add_argument(
+    "--out_dir",
+    type=str,
+    default=str(DEFAULT_OUT_DIR)
+)
     args = parser.parse_args()
     convert_and_report(args.image, args.out_dir)
