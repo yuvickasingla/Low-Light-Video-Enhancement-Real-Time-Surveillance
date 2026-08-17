@@ -1,0 +1,25 @@
+image,noise_setting,noise_type,pdf_formula,MSE,PSNR_dB
+smooth,gaussian_0_0.01,gaussian,p(z) = 1/(sqrt(2*pi)*sigma) * exp(-(z-mean)^2 / (2*sigma^2)),503.09608021390375,21.114294272593227
+smooth,gaussian_0_0.05,gaussian,p(z) = 1/(sqrt(2*pi)*sigma) * exp(-(z-mean)^2 / (2*sigma^2)),2161.531395721925,14.783188129298779
+smooth,rayleigh_0.1,rayleigh,"p(z) = (z/scale^2) * exp(-z^2 / (2*scale^2)),  z >= 0",1230.920962566845,17.228501930893806
+smooth,rayleigh_0.3,rayleigh,"p(z) = (z/scale^2) * exp(-z^2 / (2*scale^2)),  z >= 0",9995.189529411764,8.132893272164475
+smooth,erlang_2_5,erlang,"p(z) = a^b * z^(b-1) * exp(-a*z) / (b-1)!,  z >= 0",11297.889401069518,7.600830419050524
+smooth,erlang_2_10,erlang,"p(z) = a^b * z^(b-1) * exp(-a*z) / (b-1)!,  z >= 0",3515.4334438502674,12.671014808244385
+smooth,exponential_1,exponential,"p(z) = a * exp(-a*z),  z >= 0",23484.122187165776,4.42306029535568
+smooth,exponential_3,exponential,"p(z) = a * exp(-a*z),  z >= 0",9109.710122994653,8.535758032128939
+smooth,uniform_-0.1_0.1,uniform,"p(z) = 1/(b-a) for a <= z <= b, else 0",190.74192513368985,25.326341992690892
+smooth,uniform_-0.3_0.3,uniform,"p(z) = 1/(b-a) for a <= z <= b, else 0",1414.3989518716578,16.62508435029034
+smooth,salt_pepper_d0.05,salt_pepper,p(z) = P_pepper*delta(0) + P_salt*delta(255) (impulses only),1240.7283529411766,17.19403654093216
+smooth,salt_pepper_d0.15,salt_pepper,p(z) = P_pepper*delta(0) + P_salt*delta(255) (impulses only),3697.1190802139035,12.452169219131598
+textured,gaussian_0_0.01,gaussian,p(z) = 1/(sqrt(2*pi)*sigma) * exp(-(z-mean)^2 / (2*sigma^2)),436.689765625,21.729073470658093
+textured,gaussian_0_0.05,gaussian,p(z) = 1/(sqrt(2*pi)*sigma) * exp(-(z-mean)^2 / (2*sigma^2)),1877.271298828125,15.395533204949402
+textured,rayleigh_0.1,rayleigh,"p(z) = (z/scale^2) * exp(-z^2 / (2*scale^2)),  z >= 0",1246.3949967447916,17.174246638726125
+textured,rayleigh_0.3,rayleigh,"p(z) = (z/scale^2) * exp(-z^2 / (2*scale^2)),  z >= 0",11008.16658203125,7.713653679280036
+textured,erlang_2_5,erlang,"p(z) = a^b * z^(b-1) * exp(-a*z) / (b-1)!,  z >= 0",12778.345725911458,7.066057268116216
+textured,erlang_2_10,erlang,"p(z) = a^b * z^(b-1) * exp(-a*z) / (b-1)!,  z >= 0",3696.1044401041668,12.453361263717648
+textured,exponential_1,exponential,"p(z) = a * exp(-a*z),  z >= 0",28796.464609375,3.5374118890339536
+textured,exponential_3,exponential,"p(z) = a * exp(-a*z),  z >= 0",10332.236090494791,7.9888603967057215
+textured,uniform_-0.1_0.1,uniform,"p(z) = 1/(b-a) for a <= z <= b, else 0",163.74154296875,25.989214823528055
+textured,uniform_-0.3_0.3,uniform,"p(z) = 1/(b-a) for a <= z <= b, else 0",1211.5987923177083,17.29721529097499
+textured,salt_pepper_d0.05,salt_pepper,p(z) = P_pepper*delta(0) + P_salt*delta(255) (impulses only),1427.23998046875,16.585833580190425
+textured,salt_pepper_d0.15,salt_pepper,p(z) = P_pepper*delta(0) + P_salt*delta(255) (impulses only),4131.0730598958335,11.970174851290313
